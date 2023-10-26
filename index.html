@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">University of the Cordilleras</p>
+    <form id="survey-form">
+        <fieldset>
+            <label id="name-label">Enter Name:
+                <input type="text" id="name" placeholder="Enter Name" required>
+            </label>
+            <label id="email-label">Enter Email:
+                <input type="email" id="email" placeholder="Enter Email" required>
+            </label>
+            <label id="number-label">Age
+                <input type="number" name="" id="number" min="13" max="120" placeholder="13" value="13">
+            </label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">
+                <select name="referrer" id="dropdown">
+                    <option value="">Select</option>
+                    <option value="1"></option>
+                    <option value="2"></option>
+                </select>
+            </label>
+            <label for="">
+                <input type="radio" name="yes" id="yes" value="yes">Yes
+                <input type="radio" name="yes" id="no" value="no">No
+            </label>
+            <label for="">
+                <input type="checkbox" name="" id="" value="e">
+                <input type="checkbox" name="" id="" value="w">
+            </label>
+        </fieldset>
+        <fieldset>
+            <textarea name="suggest" id="sgst" cols="30" rows="10">Any Suggestion</textarea>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit" />
+    </form>
+</body>
+</html>
+<!-- done -->
