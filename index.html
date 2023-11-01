@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Survey</title>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
+
 <body>
-    <h1 id="title">Survey Form</h1>
-    <p id="description">University of the Cordilleras</p>
+    <h1 id="title">Survey Form For CITCS students</h1>
+    <p id="description">
+        University of the Cordilleras
+        Thank you for taking the time to help us improve the platform
+    </p>
     <form id="survey-form">
         <fieldset>
             <label id="name-label">Enter Name:
@@ -18,24 +23,33 @@
                 <input type="email" id="email" placeholder="Enter Email" required>
             </label>
             <label id="number-label">Age
-                <input type="number" name="" id="number" min="13" max="120" placeholder="13" value="13">
+                <input 
+                type="number" name="age" id="number" min="13" max="120" placeholder="13" value="13">
             </label>
         </fieldset>
         <fieldset>
+            <p class="qt1 align">In which programming languages do you possess expertise?</p>
             <label for="dropdown">
                 <select name="referrer" id="dropdown">
                     <option value="">Select</option>
-                    <option value="1"></option>
-                    <option value="2"></option>
+                    <option value="1">JavaScript</option>
+                    <option value="2">Java</option>
+                    <option value="3">Pyhton</option>
+                    <option value="4">PHP</option>
                 </select>
             </label>
             <label for="">
+                <p class="align">Would you recommend this link to a friend?</p>
                 <input type="radio" name="yes" id="yes" value="yes">Yes
                 <input type="radio" name="yes" id="no" value="no">No
             </label>
-            <label for="">
-                <input type="checkbox" name="" id="" value="e">
-                <input type="checkbox" name="" id="" value="w">
+            <p></p>
+            <label for="">What course did you enrolled
+                <p></p>
+                <input type="checkbox" name="" id="ed" value="q">Network Security Track
+                <input type="checkbox" name="" id="ed" value="w">Web Technolgy Track
+                <input type="checkbox" name="" id="ed" value="e">Multimedia Arts
+                <input type="checkbox" name="" id="ed" value="r">Computer Science
             </label>
         </fieldset>
         <fieldset>
@@ -44,5 +58,5 @@
         <input type="submit" value="Submit" id="submit" />
     </form>
 </body>
+
 </html>
-<!-- done -->
